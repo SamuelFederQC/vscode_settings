@@ -1,37 +1,57 @@
 {
-    "editor.tabCompletion": "on",
-    "editor.detectIndentation": false,
-    "editor.useTabStops": false,
-    "jupyter.askForKernelRestart": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "editor.mouseWheelZoom": true,
-    "jupyter.textOutputLimit": 200000,
-    "workbench.colorTheme": "Default Dark+",
-    "python.defaultInterpreterPath": "C:\\Tools\\Anaconda3\\envs\\datascience_clean\\python.exe",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.languageServer": "Pylance",
-    "files.autoSave": "onFocusChange",
-    "files.defaultLanguage": "${activeEditorLanguage}",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "remote.SSH.remotePlatform": {
-        "ec2-54-188-64-118.us-west-2.compute.amazonaws.com": "linux",
-        "production": "linux",
-        "185.193.67.131": "linux",
-        "odin": "linux",
-        "odin_docker": "linux"
-    },
-    "notebook.output.textLineLimit": 1000,
-    "remote.SSH.configFile": "C:\\Users\\SFede\\.ssh\\config",
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "editor.suggest.localityBonus": true,
-    "editor.suggest.shareSuggestSelections": true,
-    "jupyter.sendSelectionToInteractiveWindow": true,
-    "workbench.editor.enablePreview": false,
-    "window.zoomLevel": -1
+   "editor.bracketPairColorization.enabled": true,
+   "editor.rulers": [
+       80,
+       88
+   ],
+   // see:  https://code.visualstudio.com/docs/editor/intellisense#_tab-completion
+   "editor.tabCompletion": "on",
+   "extensions.autoCheckUpdates": false,
+   "extensions.autoUpdate": false,
+   "files.trimTrailingWhitespace": true,
+   "git.autofetch": true,
+   "jupyter.askForKernelRestart": false,
+   "jupyter.debugJustMyCode": false,
+   "jupyter.runStartupCommands": [
+       "%config IPCompleter.use_jedi=False",
+       "%load_ext autoreload",
+       "%autoreload 2"
+   ],
+   "jupyter.sendSelectionToInteractiveWindow": true,
+   // "python.autoUpdateLanguageServer": false,
+   // "python.condaPath": "/opt/conda/bin/activate",
+   // "python.formatting.provider": "black",
+   "python.linting.enabled": true,
+   "python.linting.flake8Enabled": true,
+   "python.linting.pylintEnabled": false,
+   // "python.pythonPath": "/opt/conda/envs/sd-pricing-r/bin/python",
+   "python.testing.pytestEnabled": true,
+   "python.testing.pytestArgs": [
+       "tests"
+   ],
+   "terminal.integrated.scrollback": 100000,
+   "window.menuBarVisibility": "visible",
+   "workbench.iconTheme": "vscode-icons",
+   "[python]": {
+       "editor.defaultFormatter": "ms-python.black-formatter"
+   },
+   "editor.detectIndentation": false,
+   "editor.useTabStops": false,
+   "workbench.editorAssociations": {
+       "*.ipynb": "jupyter-notebook"
+   },
+   "editor.mouseWheelZoom": true,
+   "notebook.output.textLineLimit": 200000,
+   "workbench.colorTheme": "Default Dark+",
+   "editor.suggestSelection": "first",
+   "python.languageServer": "Pylance",
+   "files.autoSave": "onFocusChange",
+   "files.defaultLanguage": "${activeEditorLanguage}",
+   "notebook.cellToolbarLocation": {
+       "default": "right",
+       "jupyter-notebook": "left"
+   },
+   "editor.suggest.localityBonus": true,
+   "editor.suggest.shareSuggestSelections": true,
+   "workbench.editor.enablePreview": false,
 }
